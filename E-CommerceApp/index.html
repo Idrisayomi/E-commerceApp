@@ -1,0 +1,47 @@
+<!--PRODUCT DASHBOARD PAGE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Store</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/store.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="logo">MyStore</h1>
+
+    <div class="header-right">
+      <span id="welcomeText"></span>
+
+      <a href="cart.html" target="_blank" class="cart-icon" title="Cart">
+        🛒 <span id="cartCount">0</span>
+      </a>
+     <button id="themeToggle" class="theme-toggle">
+  <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+    <!-- Moon icon path by default -->
+    <path id="iconPath" d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+  </svg>
+</button>
+
+
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <!-- PRODUCTS -->
+  <main class="products-container" id="productsContainer">
+    <!-- Products will load here -->
+  </main>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/theme.js"></script>
+
+</body>
+</html>

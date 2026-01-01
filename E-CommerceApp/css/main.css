@@ -1,0 +1,79 @@
+:root {
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --text-color: #111111;
+  --header-bg: #222222;    /* dark header in light theme */
+  --header-text: #ffffff;   /* header text color */
+  --accent: #111111;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #f1f1f1;
+  --header-bg: #000000;    /* dark header in dark mode */
+  --header-text: #ffffff;   /* header text in dark mode */
+  --accent: #ffffff;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+ background: var(--header-bg);
+  color: var(--header-text);
+}
+
+.header a {
+   color: var(--header-text);
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header a:hover,
+.product-actions button:hover {
+  filter: brightness(0.85);
+}
+
+
+.cart-icon span {
+  background: red;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+..theme-toggle {
+  color: var(--header-text);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+.theme-toggle svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--header-text); /* makes icon color adapt to theme */
+  transition: fill 0.25s ease;
+}
